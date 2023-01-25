@@ -53,9 +53,9 @@ It ended up taking 5 seconds so i decided to keepp it like this but if it had to
 # Installation and running from command prompt
 1. Open a terminal
 2. Navigate to the location of MainPrime.java
-3. Compile the program with the following command:
+3. Compile the program with the following command: 
 g++ assignment1multithread.cpp
-4. Run program with
+4. Run program with: 
   .\a.exe
 
   
