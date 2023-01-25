@@ -51,11 +51,11 @@ It ended up taking 5 seconds so i decided to keepp it like this but if it had to
   Since we are using a function that checks for all primes up to the sqrt(n). Since this function checks whether a number is prime or not and does it at a polynomial runtime O(n^k) this would make it faster than the other methods depending on the input size and as we are working with 10^8 which has huge inputs it works better than O(n), O(1) and O(log n)
   
 # Installation and running from command prompt
-1.Open a terminal
-2.Navigate to the location of MainPrime.java
-3.Compile the program with the following command:
+1. Open a terminal
+2. Navigate to the location of MainPrime.java
+3. Compile the program with the following command:
 g++ assignment1multithread.cpp
-  4. Run program with
+4. Run program with
   .\a.exe
 
   
