@@ -49,6 +49,13 @@ It ended up taking 5 seconds so i decided to keepp it like this but if it had to
   Now on the function itself when we check whether a number is prime first we see if its 2 or 3 which would make it prime we increment counter and make sum = itself and the number we just checked.After this we check whether it is 0 or1 and if its even or can be divided by 3 if so it wouldnt be a prime number so below this statement we have it continue to next number.Then we have a for loo[ that skips 4 because if its even it was covered by last statement which checked if it had remainder after divided by 2.In this for loop we will check whether the number is divisible by any of the factors in the range given. We check if the number is divisible by 5 then by 7 and if so breakand then continue by a flag and if not the it keeps for looping with incrementing by 6 which will keep ittesting odd numbers until sqrt(N).
   
   Since we are using a function that checks for all primes up to the sqrt(n). Since this function checks whether a number is prime or not and does it at a polynomial runtime O(n^k) this would make it faster than the other methods depending on the input size and as we are working with 10^8 which has huge inputs it works better than O(n), O(1) and O(log n)
-
+  
+#Installation and running from command prompt
+1.Open a terminal
+2.Navigate to the location of MainPrime.java
+3.Compile the program with the following command:
+g++ assignment1multithread.cpp
+  4. Run program with
+  .\a.exe
 
   
