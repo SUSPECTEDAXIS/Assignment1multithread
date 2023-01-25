@@ -47,7 +47,10 @@ run in last thread for efficiency depending on a flag. After the local list is d
 needed to make the 8 threads and run them parallel. So i made 8 threads and had each one run from 1/8 increment of the number 10^8 so that the work would be somewhat distributed 
 even though the later threads do slightly more work than the ones before. After this I join all 8 threads and proceeded to print out requirements and added the execution runtime too 
 start at when threads are made to when last one is joined using std chrono. 
-It ended up taking 5 seconds so i decided to keepp it like this but if it had to be improved it would have to maybe use a sieves method.(I used primality test method sqrt)
+**Runtime**  
+  
+  It ended up taking 5 seconds so i decided to keepp it like this but if it had to be improved it would have to maybe use a  sieves method.(I used primality test method sqrt)
+
 ================================================================================================================================================================================
 # Proving that the primality test found all of the prime numbers and its efficiency explained
   Using 100 as example
