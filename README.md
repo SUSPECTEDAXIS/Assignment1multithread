@@ -33,9 +33,10 @@ threads complete.
 
 
 
-# Approach and methods used
+# Approach and methods used/experimental evaluation of approach.
 First I wanted to make sure I could make a function that would determine which numbers where prime numbers up to 10^8.
 For my algorithm i decided to go with the Primality Test algorithm. This method checks whether the input number given is evenly divisible by any prime number between 2 and sqrt(N), meaning remainder is 0. If this is the case it means n is composite and if it isnt then it is a prime number.Now that I had my function for primes I needed to have in this function a variable that could be locked and unwrap so it could be used for the threads later on. Used atomic variable as long long int for botrh counter (c) and the sum (sum). On the if statements in all of the places where it was proved the numbers where prime i had local variables inside the prime function that would increment the counter and another that kept track of the sum. First i had used atomic variables but it would be innaccurate so instead first in for loop had them kept track with locals and after calculations were done had the atomic variables increment by themselves and their respective local variables. As for my last requirement of having the top then store i used a local vector  that would only run in last thread for efficiency depending on a flag. After the local list is done we will push the values from the local to the global vector. Now that the function was done i needed to make the 8 threads and run them parallel. So i made 8 threads and had each one run from 1/8 increment of the number 10^8 so that the work would be somewhat distributed even though the later threads do slightly more work than the ones before. After this I join all 8 threads and proceeded to print out requirements and added the execution runtime too start at when threads are made to when last one is joined using std chrono.
+It ended up taking 5 seconds so i decided to keepp it like this but if it had to be improved it would have to maybe use a sieves method.(I used primality test method sqrt)
 
 # Proving that the primality test found all of the prime numbers and its efficiency explained
   Using 100 as example
